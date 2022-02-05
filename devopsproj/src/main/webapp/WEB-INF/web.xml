@@ -20,5 +20,6 @@
 <url-pattern>/UserServlet/dashboard</url-pattern>
  <url-pattern>/UserServlet/edit</url-pattern>
  <url-pattern>/UserServlet/update</url-pattern>
+  <url-pattern>/UserServlet/delete</url-pattern>
  </servlet-mapping>
 </web-app>
