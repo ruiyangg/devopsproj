@@ -13,6 +13,11 @@
   <servlet>
  <servlet-name>UserServlet</servlet-name>
  <servlet-class>UserServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+ <servlet-name>notesServlet</servlet-name>
+ <servlet-class>notesServlet</servlet-class>
  </servlet>
 
  <servlet-mapping>
@@ -22,4 +27,13 @@
  <url-pattern>/UserServlet/update</url-pattern>
   <url-pattern>/UserServlet/delete</url-pattern>
  </servlet-mapping>
+ 
+ <servlet-mapping>
+ <servlet-name>notesServlet</servlet-name>
+<url-pattern>/notesServlet/dashboard</url-pattern>
+ <url-pattern>/notesServlet/edit</url-pattern>
+ <url-pattern>/notesServlet/update</url-pattern>
+ <url-pattern>/notesServlet/delete</url-pattern>
+ </servlet-mapping>
+ 
 </web-app>
