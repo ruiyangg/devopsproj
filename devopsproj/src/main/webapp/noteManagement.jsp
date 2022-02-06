@@ -22,7 +22,7 @@ crossorigin="anonymous">
 <hr>
 <div class="container text-left">
 <!-- Add new note button redirects to the notes.jsp page -->
-<a href="<%=request.getContextPath()%>/notes.jsp" class="btn btnsuccess">Add New note</a>
+<a href="<%=request.getContextPath()%>/note.jsp" class="btn btnsuccess">Add New note</a>
 </div>
 <br>
 <!-- Create a table to list out all current users information -->
@@ -44,24 +44,24 @@ crossorigin="anonymous">
 information accordingly -->
 <tr>
 <td>
-<c:out value="${user.name}" />
+<c:out value="${note.name}" />
 </td>
 <td>
-<c:out value="${user.description}" />
+<c:out value="${note.description}" />
 </td>
 <td>
-<c:out value="${user.target_date}" />
+<c:out value="${note.target_date}" />
 </td>
 <td>
-<c:out value="${user.accomplish}" />
+<c:out value="${note.accomplish}" />
 </td>
 <!-- For each user in the database, Edit/Delete
 buttons which invokes the edit/delete functions -->
 <td>
-<a href="edit?name=<c:out value='${user.name}'
+<a href="edit?name=<c:out value='${note.name}'
 />">Edit</a> &nbsp;&nbsp;&nbsp;&nbsp;
 <a href="delete?name=<c:out
-value='${user.name}' />">Delete</a>
+value='${note.name}' />">Delete</a>
 </td>
 </tr>
 </c:forEach>
