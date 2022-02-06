@@ -126,7 +126,7 @@ public class notesServlet extends HttpServlet {
 		// Step 5.4: Set the users list into the listUsers attribute to be pass to the
 		// userManagement.jsp
 		request.setAttribute("listnote", note);
-		request.getRequestDispatcher("/notemanagement.jsp").forward(request, response);
+		request.getRequestDispatcher("/noteManagement.jsp").forward(request, response);
 	}
 
 	// method to get parameter, query database for existing user data and redirect
@@ -180,7 +180,7 @@ public class notesServlet extends HttpServlet {
 		}
 		// Step 3: redirect back to UserServlet (note: remember to change the url to
 		// your project name)
-		response.sendRedirect("http://localhost:8090/devopsproj/noteServlet/dashboard");
+		response.sendRedirect("http://localhost:8090/devopsproj/notesServlet/dashboard");
 	}
 	//method to delete user
 	private void deletenote(HttpServletRequest request, HttpServletResponse response)
@@ -194,6 +194,6 @@ public class notesServlet extends HttpServlet {
 	 int i = statement.executeUpdate();
 	 }
 	 //Step 3: redirect back to UserServlet dashboard (note: remember to change the url to your project name)
-	 response.sendRedirect("http://localhost:8090/devopsproj/noteServlet/dashboard");
+	 response.sendRedirect("http://localhost:8090/devopsproj/notesServlet/dashboard");
 	}
 }
