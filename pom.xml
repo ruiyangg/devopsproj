@@ -4,6 +4,17 @@
   <artifactId>devopsproj</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  
+  <properties>
+  <selenium.groupId>org.seleniumhq.selenium</selenium.groupId>
+  <selenium.artifactId>selenium-java</selenium.artifactId>
+  <selenium.version>2.53.1</selenium.version>
+  
+  <testng.groupId>orgntestng</testng.groupId>
+  <testngartifactId>testng</testngartifactId>
+  <testng.version>6.9.10</testng.version>
+  </properties>
+  
   <dependencies>
  <dependency>
  <groupId>javax.servlet</groupId>
@@ -29,6 +40,20 @@
  <artifactId>jstl</artifactId>
  <version>1.2</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.141.59</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.0.0</version>
+    <scope>test</scope>
+</dependency>
+
 </dependencies>
   <build>
     <plugins>
@@ -43,6 +68,14 @@
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
         <version>3.2.3</version>
+      </plugin>
+      <plugin>
+      <artifactId>maven-surefire_plugin</artifactId>
+      <version>2.22.1</version>
+      <configuration>
+      <suiteXmlFiles><suiteXmlFile>testng.sml</suiteXmlFile>
+      </suiteXmlFiles>
+      </configuration>
       </plugin>
     </plugins>
   </build>

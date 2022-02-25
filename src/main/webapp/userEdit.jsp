@@ -21,7 +21,7 @@
 		<ul class="navbar-nav">
 			<li><a
 				href="<%=request.getContextPath()%>/UserServlet/dashboard"
-				class="nav-link">Back to Dashboard</a></li>
+				class="nav-link">Back to dashboard</a></li>
 		</ul>
 	</nav>
 	<div class="container col-md-6">
