@@ -13,8 +13,17 @@
   <testng.groupId>orgntestng</testng.groupId>
   <testngartifactId>testng</testngartifactId>
   <testng.version>6.9.10</testng.version>
-  </properties>
   
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
+  
+  <junit-jupiter.groupId>org.junit.jupiter</junit-jupiter.groupId>
+  <junit-jupiter.artifactId>junit-jupiter</junit-jupiter.artifactId>
+  <junit-jupiter.version>5.7.0</junit-jupiter.version>
+  
+  </properties>
+    
   <dependencies>
  <dependency>
  <groupId>javax.servlet</groupId>
@@ -53,6 +62,20 @@
     <version>7.0.0</version>
     <scope>test</scope>
 </dependency>
+<dependency>
+<groupId>junit</groupId>
+<artifactId>junit</artifactId>
+<version>4.11</version>
+<scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter</artifactId>
+    <version>5.7.0</version>
+    <scope>test</scope>
+</dependency>
+
 
 </dependencies>
   <build>

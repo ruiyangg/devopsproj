@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-26T02:58:30 SGT" name="Default suite" finished-at="2022-02-26T02:58:33 SGT" duration-ms="3031">
+  <suite started-at="2022-02-27T20:17:35 SGT" name="Default suite" finished-at="2022-02-27T20:17:43 SGT" duration-ms="7684">
     <groups>
     </groups>
-    <test started-at="2022-02-26T02:58:30 SGT" name="Default test" finished-at="2022-02-26T02:58:33 SGT" duration-ms="3031">
+    <test started-at="2022-02-27T20:17:35 SGT" name="Default test" finished-at="2022-02-27T20:17:43 SGT" duration-ms="7684">
       <class name="com.ssdevops.devopsproj.NewTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.ssdevops.devopsproj.NewTest@55f616cf]" started-at="2022-02-26T02:58:30 SGT" name="beforeTest" finished-at="2022-02-26T02:58:32 SGT" duration-ms="2080" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.ssdevops.devopsproj.NewTest@6c779568]" started-at="2022-02-27T20:17:35 SGT" name="beforeTest" finished-at="2022-02-27T20:17:37 SGT" duration-ms="1991" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="checkeditnote()[pri:0, instance:com.ssdevops.devopsproj.NewTest@55f616cf]" started-at="2022-02-26T02:58:32 SGT" name="checkeditnote" finished-at="2022-02-26T02:58:33 SGT" duration-ms="786" status="PASS">
+        <test-method signature="checkregister()[pri:0, instance:com.ssdevops.devopsproj.NewTest@6c779568]" started-at="2022-02-27T20:17:37 SGT" name="checkregister" finished-at="2022-02-27T20:17:38 SGT" duration-ms="918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkregister -->
+        <test-method signature="checkedituser()[pri:1, instance:com.ssdevops.devopsproj.NewTest@6c779568]" started-at="2022-02-27T20:17:38 SGT" name="checkedituser" finished-at="2022-02-27T20:17:39 SGT" duration-ms="1197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkedituser -->
+        <test-method signature="checkdeleteuser()[pri:2, instance:com.ssdevops.devopsproj.NewTest@6c779568]" started-at="2022-02-27T20:17:39 SGT" name="checkdeleteuser" finished-at="2022-02-27T20:17:39 SGT" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkdeleteuser -->
+        <test-method signature="checkaddnotes()[pri:3, instance:com.ssdevops.devopsproj.NewTest@6c779568]" started-at="2022-02-27T20:17:39 SGT" name="checkaddnotes" finished-at="2022-02-27T20:17:40 SGT" duration-ms="900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkaddnotes -->
+        <test-method signature="checkeditnote()[pri:4, instance:com.ssdevops.devopsproj.NewTest@6c779568]" started-at="2022-02-27T20:17:40 SGT" name="checkeditnote" finished-at="2022-02-27T20:17:42 SGT" duration-ms="1737" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkeditnote -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.ssdevops.devopsproj.NewTest@55f616cf]" started-at="2022-02-26T02:58:33 SGT" name="afterTest" finished-at="2022-02-26T02:58:33 SGT" duration-ms="125" status="PASS">
+        <test-method signature="checkdeletenote()[pri:5, instance:com.ssdevops.devopsproj.NewTest@6c779568]" started-at="2022-02-27T20:17:42 SGT" name="checkdeletenote" finished-at="2022-02-27T20:17:42 SGT" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkdeletenote -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.ssdevops.devopsproj.NewTest@6c779568]" started-at="2022-02-27T20:17:42 SGT" name="afterTest" finished-at="2022-02-27T20:17:43 SGT" duration-ms="319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
